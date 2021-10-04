@@ -1,0 +1,27 @@
+data:
+  batch_size: 16384
+  data_dir: './data'
+  data_queue: ['drug_drug','drug_protein','protein_protein']
+#  data_queue: ['drug_drug','drug_protein']
+  num_workers: 16
+  neg_num: 4
+model:
+  K: 6
+  node_num_list: [19122,2135]
+  feature_dim_list: [196,128]
+  hidden_dim: 64
+  em_dim: 32
+  lam: 0.5
+  learning_rate: 0.01
+  weight_decay: 0.0001
+  dropout: 0.1
+  pos_weight: 1.
+callback:
+  monitor: 'auc'
+  mode: 'max'
+train:
+  max_epochs: 30
+  gpus: 1
+  reload_dataloaders_every_n_epochs: 1
+  resume_from_checkpoint: lightning_logs/version_15/checkpoints/epoch=19-step=5519.ckpt
+
