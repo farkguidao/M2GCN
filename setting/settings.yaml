@@ -6,7 +6,7 @@ data:
   num_workers: 16
   neg_num: 4
 model:
-  K: 6
+  K: 3
   node_num_list: [19122,2135]
   feature_dim_list: [196,128]
   hidden_dim: 64
@@ -23,5 +23,5 @@ train:
   max_epochs: 30
   gpus: 1
   reload_dataloaders_every_n_epochs: 1
-  resume_from_checkpoint: lightning_logs/version_15/checkpoints/epoch=19-step=5519.ckpt
+#   resume_from_checkpoint: lightning_logs/version_15/checkpoints/epoch=19-step=5519.ckpt
 
