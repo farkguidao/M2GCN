@@ -20,7 +20,7 @@ callback:
   monitor: 'auc'
   mode: 'max'
 train:
-  max_epochs: 30
+  max_epochs: 100
   gpus: 1
   reload_dataloaders_every_n_epochs: 1
 #   resume_from_checkpoint: lightning_logs/version_15/checkpoints/epoch=19-step=5519.ckpt
