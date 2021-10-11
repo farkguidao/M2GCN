@@ -43,8 +43,8 @@ There are five useful inputs files in this directory `/data`, namely:
 - **drug_adj.txt:** Drug-drug interactions for training.
 - **protein_adj.txt:** Protein-protein interactions for training.
 - **dp_adj.txt:** Drug-protein interactions for training.
-- **test_false.txt:** Drug-Drug interactions for testing (Positive sample) .
-- **test_true.txt:** Drug-Drug no interactions for testing (negative sample).
+- **test_false.txt:** Drug-Drug interactions for testing (positive samples) .
+- **test_true.txt:** Drug-Drug no interactions for testing (negative samples).
 
 If you want to run our code directly, please ensure the consistency of the data file name, because we wrote it directly in the code of the model.
 
