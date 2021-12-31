@@ -1,0 +1,15 @@
+K: 3
+N: 21257
+dropout: 0.1
+em_dim: 32
+feature_dim_list:
+- 196
+- 128
+hidden_dim: 64
+lam: 0.5
+learning_rate: 0.01
+node_num_list:
+- 19122
+- 2135
+pos_weight: 1.0
+weight_decay: 0.0001
