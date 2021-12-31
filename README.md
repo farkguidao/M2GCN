@@ -74,7 +74,7 @@ And you can run `tensorboard --logdir lightning_logs/version_0` to monitor the t
 
 You can predict the interaction between drugs through the pre-trained model we provide.
 
-**Since git limits the size of a single file upload, we divide the pre-trained model into multiple volumes. Please unzip the files in the directory `./lightning_logs/pre-trained/checkpoints/` first.**
+**Since git limits the size of a single file upload (<25M), we divide the pre-trained model into multiple volumes. Please unzip the files in the directory `./lightning_logs/pre-trained/checkpoints/` first.**
 
 Load the pre-trained model and predict the test dataset by:
 
